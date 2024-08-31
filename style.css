@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
@@ -55,7 +56,7 @@ section {
 
 #mindmap #mindmap-new-tab {
     display: inline-block;
-    
+
     margin-bottom: 10px;
     padding: 5px;
 
@@ -109,6 +110,8 @@ section {
     border: 1px solid #ddd;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
 }
 
 .tense-card:hover {
@@ -120,6 +123,59 @@ section {
     font-size: 1.5rem;
     color: #333;
 }
+
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 2;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+
+    margin: 15% auto;
+    padding: 20px;
+
+    width: 80%;
+    max-width: 600px;
+    
+    background-color: #fff;
+
+    border: 2px solid #888;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.4);
+}
+
+.popup-close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.popup-close-button:hover,
+.popup-close-button:focus {
+    color: black;
+    cursor: pointer;
+}
+
+.popup-sub-title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+
+
 
 
 ul {
