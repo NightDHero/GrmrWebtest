@@ -8,15 +8,15 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to English Grammar Mastery</h1>
+        <h1>English Grammar Hub: Learn, Practice, Perfect</h1>
         <p>Explore the 16 tenses of English with detailed explanations and interactive resources.</p>
         <p class="intro-note">My mind map gives a quick look at the 16 tenses, but it might not cover everything you need to fully understand them. <!-- Let's  more detailed resources for a deeper understanding. --></p>
     </header>
 
     <section id="mindmap">
         <h2>Explore the 16 Tenses <div id="mindmap-new-tab"><a href="https://miro.com/app/live-embed/uXjVKkR9EAQ=/?moveToViewport=2200,-2210,4236,2190&embedId=319192875773" target="_blank">New Tab</a></div></h2>
-        
-        <iframe src="https://miro.com/app/live-embed/uXjVKkR9EAQ=/?moveToViewport=2200,-2210,4236,2190&embedId=319192875773" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+       
+        <iframe src="https://miro.com/app/live-embed/uXjVKkR9EAQ=/?moveToViewport=1407,-3139,5731,4568&embedId=718497896083" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
     </section>
 
     <section id="tense-explanations">
@@ -24,65 +24,231 @@
         <div class="tenses-grid">
             <div class="tense-group">
                 <h3 class="tense-group-name">Past Tenses</h3>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('past-simple-popup')">
                     <h4 class="tense-card-name">Past Simple</h4>
                 </div>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('past-continuous-popup')">
                     <h4 class="tense-card-name">Past Continuous</h4>    
                 </div>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('past-perfect-popup')">
                     <h4 class="tense-card-name">Past Perfect</h4>    
                 </div>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('past-perfect-continuous-popup')">
                     <h4 class="tense-card-name">Past Perfect Continuous</h4>    
                 </div>
             </div>
             <div class="tense-group">
                 <h3 class="tense-group-name">Present Tenses</h3>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('present-simple-popup')">
                     <h4 class="tense-card-name">Present Simple</h4>      
                 </div>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('present-continuous-popup')">
                     <h4 class="tense-card-name">Present Continuous</h4>          
                 </div>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('present-perfect-popup')">
                     <h4 class="tense-card-name">Present Perfect</h4>
                 </div>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('present-perfect-continuous-popup')">
                     <h4 class="tense-card-name">Present Perfect Continuous</h4>
                 </div>
             </div>
             <div class="tense-group">
                 <h3 class="tense-group-name">Future Tenses</h3>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('future-simple-popup')">
                     <h4 class="tense-card-name">Future Simple</h4>   
                 </div>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('future-continuous-popup')">
                     <h4 class="tense-card-name">Future Continuous</h4> 
                 </div>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('future-perfect-popup')">
                     <h4 class="tense-card-name">Future Perfect</h4>
                 </div>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('future-perfect-continuous-popup')">
                     <h4 class="tense-card-name">Future Perfect Continuous</h4>     
                 </div>
             </div>
             <div class="tense-group">
                 <h3 class="tense-group-name">Conditional Tenses</h3>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('conditional-simple-popup')">
                     <h4 class="tense-card-name">Conditional Simple</h4>    
                 </div>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('conditional-continuous-popup')">
                     <h4 class="tense-card-name">Conditional Continuous</h4>        
                 </div>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('conditional-perfect-popup')">
                     <h4 class="tense-card-name">Conditional Perfect</h4>
                 </div>
-                <div class="tense-card">
+                <div class="tense-card" onclick="openPopup('conditional-perfect-continuous-popup')">
                     <h4 class="tense-card-name">Conditional Perfect Continuous</h4>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="practice-questions">
+        
+    </section>
+
+
+
+
+
+    <div id="past-simple-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('past-simple-popup')">&times;</span>
+            <h1 class="popup-title">Past Simple</h1>
+
+            <section class="structure">
+                <h2 class="popup-sub-title">Structure</h2>
+                <p><strong>Affirmative:</strong> <br> Subject + Past Simple</p>
+                <p><strong>Negative:</strong> <br> Subject + did not + Base Form</p>
+                <p><strong>Interrogative:</strong> <br> Did + Subject + Base Form + ?</p>
+            </section>
+
+            <section class="usage">
+                <h2 class="popup-sub-title">Usage</h2>
+                <ul>
+                    <li>Use case 1</li>
+                    <li>Use case 2</li>
+                    <li>Use case 3</li>
+                </ul>
+            </section> 
+
+        </div>
+    </div>
+
+    <div id="past-continuous-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('past-continuous-popup')">&times;</span>
+            <h2>Past Continuous</h2>
+            <p>Explanation goes here...</p>
+        </div>
+    </div>
+
+    <div id="past-perfect-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('past-perfect-popup')">&times;</span>
+            <h2>Past Perfect</h2>
+            <p>Explanation goes here...</p>
+        </div>
+    </div>
+
+    <div id="past-perfect-continuous-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('past-perfect-continuous-popup')">&times;</span>
+            <h2>Past Perfect Continuous</h2>
+            <p>Explanation goes here...</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="present-simple-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('present-simple-popup')">&times;</span>
+            <h2>Present Simple</h2>
+            <p>Explanation goes here...</p>
+        </div>
+    </div>
+
+    <div id="present-continuous-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('present-continuous-popup')">&times;</span>
+            <h2>Present Continuous</h2>
+            <p>Explanation goes here...</p>
+        </div>
+    </div>
+
+    <div id="present-perfect-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('present-perfect-popup')">&times;</span>
+            <h2>Present Perfect</h2>
+            <p>Explanation goes here...</p>
+        </div>
+    </div>
+
+    <div id="present-perfect-continuous-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('present-perfect-continuous-popup')">&times;</span>
+            <h2>Present Perfect Continuous</h2>
+            <p>Explanation goes here...</p>
+        </div>
+    </div>
+
+
+
+
+    <div id="future-simple-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('future-simple-popup')">&times;</span>
+            <h2>Future Simple</h2>
+            <p>Explanation goes here...</p>
+        </div>
+    </div>
+
+    <div id="future-continuous-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('future-continuous-popup')">&times;</span>
+            <h2>Future Continuous</h2>
+            <p>Explanation goes here...</p>
+        </div>
+    </div>
+
+    <div id="future-perfect-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('future-perfect-popup')">&times;</span>
+            <h2>Future Perfect</h2>
+            <p>Explanation goes here...</p>
+        </div>
+    </div>
+
+    <div id="future-perfect-continuous-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('future-perfect-continuous-popup')">&times;</span>
+            <h2>Future Perfect Continuous</h2>
+            <p>Explanation goes here...</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="conditional-simple-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('conditional-simple-popup')">&times;</span>
+            <h2>Conditional Simple</h2>
+            <p>Explanation goes here...</p>
+        </div>
+    </div>
+
+    <div id="conditional-continuous-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('conditional-continuous-popup')">&times;</span>
+            <h2>Conditional Continuous</h2>
+            <p>Explanation goes here...</p>
+        </div>
+    </div>
+
+    <div id="conditional-perfect-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('conditional-perfect-popup')">&times;</span>
+            <h2>Conditional Perfect</h2>
+            <p>Explanation goes here...</p>
+        </div>
+    </div>
+
+    <div id="conditional-perfect-continuous-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close-button" onclick="closePopup('conditional-perfect-continuous-popup')">&times;</span>
+            <h2>Conditional Perfect Continuous</h2>
+            <p>Explanation goes here...</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
