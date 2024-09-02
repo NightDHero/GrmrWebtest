@@ -70,7 +70,7 @@ section {
 
 
 
-#tense-explanations > h2 {
+#parts-of-speech-container > h2 {
     margin-bottom: 20px;
 
     text-align: center;
@@ -78,25 +78,18 @@ section {
     color: #333;
 }
 
-.tenses-grid {
+.parts-of-speech-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.tense-group {
+.parts-of-speech-group {
     margin-bottom: 40px;
 }
 
-.tense-group-name {
-    margin-bottom: 20px;
 
-    text-align: center;
-    font-size: 2rem;
-    color: #333;
-}
-
-.tense-card {
+.parts-of-speech-card {
     position: relative;
 
     margin-bottom: 20px;
@@ -114,24 +107,26 @@ section {
     cursor: pointer;
 }
 
-.tense-card:hover {
+.parts-of-speech-card:hover,
+.parts-of-speech-card:focus {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.tense-card-name {
+.parts-of-speech-card-name {
     font-size: 1.5rem;
     color: #333;
 }
 
 
 .popup {
-    display: none;
     position: fixed;
-    left: 0;
     top: 0;
+    bottom: 0;
     right: 0;
     left: 0;
+
+    display: none;
 
     width: 100%;
     height: 100%;
@@ -142,7 +137,6 @@ section {
 }
 
 .popup-content {
-
     margin: 15% auto;
     padding: 20px;
 
@@ -174,8 +168,74 @@ section {
     font-size: 2rem;
 }
 
+.quiz-button{
+    display: inline-block;
 
+    padding: 10px 20px;
 
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.quiz-button a{
+    color: #333;
+    text-decoration: none;
+}
+
+.quiz-button:hover,
+.quiz-button:focus {
+    background-color: #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
+}
+
+#quiz-selection {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#quiz-selection h2 {
+    margin-bottom: 15px;
+}
+
+.quiz-group {
+    margin-bottom: 20px;
+}
+
+.quiz-group h3 {
+    margin-bottom: 10px;
+}
+
+.quiz-topic {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.quiz-topic label {
+    margin-left: 5px;
+}
+
+#quiz-selection button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#quiz-selection button:hover {
+    background-color: #0056b3;
+}
 
 
 ul {
@@ -190,11 +250,4 @@ ul li {
     border-radius: 5px;
 }
 
-ul li a {
-    text-decoration: none;
-    color: #333;
-}
 
-ul li a:hover {
-    text-decoration: underline;
-}
